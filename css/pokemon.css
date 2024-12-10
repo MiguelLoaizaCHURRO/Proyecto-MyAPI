@@ -1,0 +1,63 @@
+body {
+  font-family: "Gemunu Libre", sans-serif;
+  background: url('/assets/img/fondo.png') no-repeat center center fixed;
+  background-size: cover;
+  color: white; /* Texto blanco para mayor contraste */
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8); /* Sombra de texto para mayor legibilidad */
+  margin-bottom: -30px;
+  z-index: 2;
+  position: relative;
+  color: #ffd700; /* Amarillo dorado para destacar el título */
+}
+
+.main-container {
+  background: rgba(0, 0, 0, 0.7); /* Fondo oscuro translúcido */
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Sombra suave para destacar */
+  margin-top: 60px;
+  color: #f8f8f8; /* Texto claro para el contenedor */
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.9); /* Fondo blanco translúcido */
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra suave para las tarjetas */
+}
+
+.card .card-title {
+  color: #000; /* Título oscuro para las tarjetas */
+  font-weight: bold;
+}
+
+.pagination a {
+  color: #000; /* Color del texto en los enlaces de la paginación */
+  border-radius: 5px; /* Bordes redondeados para los enlaces */
+  padding: 8px 12px; /* Relleno para los enlaces */
+  text-decoration: none; /* Quitar subrayado */
+  transition: background-color 0.3s, color 0.3s; /* Transición para efectos */
+}
+
+.pagination a:hover {
+  color: white; /* Texto blanco al pasar el ratón */
+  background-color: #161616; /* Fondo amarillo dorado */
+  border-color: #ffd700; /* Borde amarillo dorado */
+}
+
+.pagination a.active {
+  background-color: #222; /* Fondo gris oscuro para el enlace activo */
+  color: #fff; /* Texto blanco para el enlace activo */
+  font-weight: bold;
+}
+
+.pagination a.disabled {
+  background-color: #aaa; /* Fondo gris claro para enlaces desactivados */
+  color: #666; /* Texto gris para los enlaces desactivados */
+  cursor: not-allowed; /* Cursor de desactivado */
+}

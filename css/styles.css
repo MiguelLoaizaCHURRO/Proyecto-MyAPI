@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gemunu Libre", sans-serif;
+  background-color: #6b63d7; /* Azul violáceo más suave */
+  color: #f8f8f8; /* Texto claro */
+}
+
+.header {
+  background: rgba(0, 0, 0, 0.7); /* Fondo más oscuro con transparencia */
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+  max-width: 80%;
+  margin: 20px auto;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  animation: fadeInDown 1s ease-out;
+  color: #ffd700; /* Amarillo dorado */
+}
+
+.header h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #eaeaea;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.background {
+  background: url('/assets/img/fondo.png') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Botón primario */
+.btn-primary {
+  background-color: #ffd700; /* Amarillo dorado */
+  border-color: #ffd700;
+  color: #000; /* Texto oscuro */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+  background-color: #ffc107; /* Amarillo más cálido */
+  color: #000;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Selector principal (opción desplegable) */
+select {
+  background-color: #444; /* Fondo gris oscuro */
+  color: #fff; /* Texto blanco */
+  border: 1px solid #ffd700; /* Borde amarillo */
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1rem;
+  appearance: none; /* Ocultar estilos por defecto */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  width: 100%; /* Ajustar al contenedor */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+select:hover {
+  background-color: #161616; /* Fondo más claro */
+  border-color: #ffc107; /* Borde más cálido */
+  color: #ffffff;
+}
+
+select:focus {
+  background-color: #161616; /* Fondo más oscuro */
+  border-color: #ffd700; /* Borde dorado */
+  outline: none;
+  color: #ffffff;
+}
+
+/* Opciones dentro del desplegable */
+select option {
+  background-color: #222; /* Fondo gris oscuro */
+  color: #ffffff; /* Texto claro */
+  border: none;
+}
+
+select option:hover {
+  background-color: #ffd700; /* Fondo amarillo */
+  color: #000; /* Texto oscuro */
+}
+
+select option:checked {
+  background-color: #555; /* Fondo más oscuro para opción seleccionada */
+  color: #fff; /* Texto claro */
+}
+
+/* Ajuste visual para el icono desplegable (flecha) */
+select::-ms-expand {
+  display: none;
+}

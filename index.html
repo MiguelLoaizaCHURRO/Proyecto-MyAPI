@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto MyAPI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" type="image/x-icon" href="./assets/img/icono.png">
+</head>
+
+<div class="background">
+    <div class="d-flex flex-column align-items-center justify-content-center text-center text-white vh-100">
+        <div class="header mb-4">
+            <h1>API'S BY MIGUEL</h1>
+            <h2 class="fs-4">Busca tus personajes favoritos Pokémon y animes desde una sola plataforma
+            </h2>
+        </div>
+        <div>
+            <label for="api-selector" class="form-label fs-5">Selecciona una opción:</label>
+            <select id="api-selector" class="form-select w-60 mx-auto mb-3">
+                <option class="btn" value="">Seleccionar</option>
+                <option class="btn" value="pokeAPI.html">Pokémon</option>
+                <option class="btn" value="animeSearch.html">Anime</option>
+            </select>
+            <button class="btn btn-dark px-4 py-2" onclick="navigateToApi()">Ir</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function navigateToApi() {
+        const api = document.getElementById("api-selector").value;
+        if (api) {
+            window.location.href = api;
+        } else {
+            alert("Selecciona una API");
+        }
+    }
+</script>
+</body>
+
+</html>
